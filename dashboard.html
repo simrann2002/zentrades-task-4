@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    
+</head>
+<body>
+    <div id="company-metrics">
+        <div class="metric total-revenue">
+            <span class="value">$406,411.29</span>
+            <span class="label">Total Revenue</span>
+        </div>
+        <div class="metric total-jobs-avg">
+            <span class="value">$620</span>
+            <span class="label">Total Jobs Avg</span>
+        </div>
+        <div class="metric outstanding-amount">
+            <span class="value">$110,448.8</span>
+            <span class="label">Outstanding Amount</span>
+        </div>
+        <div class="metric memberships-sold">
+            <span class="value">105</span>
+            <span class="label">Memberships Sold</span>
+        </div>
+        <div class="metric tickets-created">
+            <span class="value">655</span>
+            <span class="label">Tickets Created</span>
+        </div>
+        <div class="metric jobs-completed">
+            <span class="value">436</span>
+            <span class="label">Jobs Completed</span>
+        </div>
+        <div class="metric tickets-scheduled">
+            <span class="value">735</span>
+            <span class="label">Tickets Scheduled</span>
+        </div>
+        <div class="metric total-canceled">
+            <span class="value">65</span>
+            <span class="label">Total Canceled</span>
+        </div>
+    </div>
+
+
+    <div id="charts-container">
+        <div class="chart" id="revenue-by-job-location">
+            <h2>Revenue By Job Location</h2>
+            <canvas id="jobLocationChart"></canvas>
+        </div>
+        <div class="chart" id="revenue-by-job-type">
+            <h2>Revenue By Job Type</h2>
+            <canvas id="jobTypeChart"></canvas>
+        </div>
+    </div>
+
+ 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
